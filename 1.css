@@ -1,4 +1,119 @@
-body{
-    font-style: italic;
-    color: rgb(63, 53, 194);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Màu nền nhẹ nhàng */
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img.profile-image {
+    width: 120px; /* Kích thước hình ảnh */
+    height: 120px; /* Kích thước hình ảnh */
+    border-radius: 50%; /* Bo tròn hình ảnh */
+    border: 3px solid #2c3e50; /* Khung cho hình ảnh */
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #2c3e50; /* Màu chữ */
+    font-size: 24px; /* Kích thước chữ */
+}
+
+header h2 {
+    color: #34495e; /* Màu chữ phụ */
+    font-weight: normal; /* Định dạng chữ */
+}
+
+header p {
+    margin: 5px 0;
+    color: #34495e; /* Màu chữ phụ */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px; /* Bo góc cho section */
+    border-left: 4px solid #2c3e50; /* Đường viền bên trái cho các section */
+}
+
+section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #2c3e50;
+    width: 50%; /* Chiều rộng đường kẻ */
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li::before {
+    content: "✔"; /* Biểu tượng cho từng mục */
+    color: #2c3e50; /* Màu cho biểu tượng */
+    position: absolute;
+    left: -20px; /* Khoảng cách từ trái */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #2c3e50;
+    color: #ffffff;
+    margin-top: 20px;
+    border-radius: 5px; /* Bo góc cho footer */
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
 }
